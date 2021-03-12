@@ -12,4 +12,13 @@ export LIBGL_ALWAYS_INDIRECT=1
 sudo apt update
 sudo apt install x11-apps
 
-Testit: xcalc - Calculator should open on Windows
+## Start XLaunch on Windows
+
+* Multiple Windows
+* Start no client
+* disable Native opengl
+* enable Disable access control
+
+## Testit: 
+
+In wsl: enter xcalc - Calculator should open on Windows
