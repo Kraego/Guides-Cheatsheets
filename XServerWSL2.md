@@ -38,6 +38,6 @@ In wsl: enter xcalc - Calculator should open in Windows10
 2. Save configuration
 3. Press Windows + R
 4. Enter: shell:startup
-5. Copy save configuration: *.launch (Generated in step 2) to this folder (step 4)
+5. Copy saved configuration: *.launch (Generated in step 2) to this folder (step 4)
 
 Now the XServer will be started with windows startup.
