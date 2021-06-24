@@ -13,6 +13,7 @@
     plaidbench keras mobilenet
     ```
      check via taskmanager if GPU has load.
+   * maybe you need: OpenCL, OpenGL - Compatibilitypack from Microsoft Store 
 5. Use it:
   ```
   import plaidml.keras
