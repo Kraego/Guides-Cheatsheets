@@ -16,3 +16,4 @@ In order to run **ZSH** in *Windows Terminal* you have to do both parts below.
 
 * Install *Oh my posh* to get the fonts etc.
 * see: https://ohmyposh.dev/docs/windows
+  * via scoop (powershell as admin): ```iex (new-object net.webclient).downloadstring('https://get.scoop.sh')```   
