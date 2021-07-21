@@ -28,7 +28,7 @@ go get -u github.com/justjanne/powerline-go
 ```
 
 Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"```
-if it's working copy this file to your ```~/.bashrc```.
+if it's working copy this to the end of your ```~/.bashrc``` file.
 
 In your ```~/.bashrc``` add the following lines
 
