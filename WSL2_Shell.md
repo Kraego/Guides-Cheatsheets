@@ -52,7 +52,7 @@ https://stackoverflow.com/questions/66042480/not-getting-cascadia-code-pl-in-pow
 
 ### In Terminal - settings.json
 
-```json
+``` 
  "profiles":
     {
         "defaults":
