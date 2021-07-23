@@ -12,13 +12,13 @@ Install-Module oh-my-posh -Scope CurrentUser
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 code $PROFILE
 ```
-* preview available themes: ```Get-PoshThemes```
 * add the following lines at the end of your profile
 ``` powershell
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme powerlevel10k_rainbow
 ```
+* preview available themes: ```Get-PoshThemes```
 
 ## In WSL
 
