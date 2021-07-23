@@ -22,17 +22,14 @@ Set-PoshPrompt -Theme powerlevel10k_rainbow
 
 ## In WSL
 
-Install powerline
+* Install powerline
 ``` bash
 sudo apt install golang-go
 go get -u github.com/justjanne/powerline-go
 ```
-
-Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"```
-if it's working copy this to the end of your ```~/.bashrc``` file.
-
-In your ```~/.bashrc``` add the following lines
-
+* Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"```
+* if it's working copy this to the end of your ```~/.bashrc``` file.
+* In your ```~/.bashrc``` add the following lines
 ``` bash
 GOPATH=$HOME/go
 function _update_ps1() {
@@ -52,7 +49,6 @@ fi
 https://stackoverflow.com/questions/66042480/not-getting-cascadia-code-pl-in-powershell
 
 ### In Terminal - settings.json
-
 ``` 
  "profiles":
     {
