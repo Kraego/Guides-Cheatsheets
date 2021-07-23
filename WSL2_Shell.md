@@ -12,11 +12,12 @@ Install-Module oh-my-posh -Scope CurrentUser
 Install-Module -Name PSReadLine -Scope CurrentUser -Force -SkipPublisherCheck
 code $PROFILE
 ```
-add the following lines at the end of your profile
+* preview available themes: ```Get-PoshThemes```
+* add the following lines at the end of your profile
 ```
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme jandedobbeleer
+Set-PoshPrompt -Theme powerlevel10k_rainbow
 ```
 
 ## In WSL
@@ -27,7 +28,7 @@ sudo apt install golang-go
 go get -u github.com/justjanne/powerline-go
 ```
 
-Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/jandedobbeleer.omp.json)"```
+Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"```
 if it's working copy this to the end of your ```~/.bashrc``` file.
 
 In your ```~/.bashrc``` add the following lines
