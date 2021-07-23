@@ -22,26 +22,25 @@ Set-PoshPrompt -Theme powerlevel10k_rainbow
 
 ## In WSL
 
-* Install powerline
+* Install oh-my-posh: 
 ``` bash
-sudo apt install golang-go
-go get -u github.com/justjanne/powerline-go
+sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
+```
+* Downlaod Posh-Themes:
+``` bash
+mkdir ~/.poshthemes
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+chmod u+rw ~/.poshthemes/*.json
+rm ~/.poshthemes/themes.zip
 ```
 * Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"```
 * if it's working copy this to the end of your ```~/.bashrc``` file.
-* In your ```~/.bashrc``` add the following lines
-``` bash
-GOPATH=$HOME/go
-function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -error $?)"
-}
-if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
-```
 
 ## Download & Install Fonts on Windows
 
+* This solves the issue with squares instead of symbols in the prompts
 * https://www.nerdfonts.com/font-downloads f.e.: Meslo NerdFont
 
 ## Set required Font in all Shells
