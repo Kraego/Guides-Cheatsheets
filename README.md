@@ -1,5 +1,5 @@
 # Guides-Cheatsheets
-Useful notes, hints, howto's for developers.
+Useful notes, hints, howto's for development.
 
 **Contents**
 * How to open windows from wsl on hostOS (Windows 10): [XServerWSL2.md](https://github.com/Kraego/Guides-Cheatsheets/blob/master/XServerWSL2.md)
