@@ -2,6 +2,8 @@
 
 This is mainly a summary of [scott hanselmans guide](https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh) plus some googeling to make *Oh my posh* run on my machine.
 
+![nice shell](./images/NiceShell.png)
+
 ## On Windows:
 
 * Install *Oh my posh* to get the fonts etc.
@@ -27,7 +29,7 @@ Set-PoshPrompt -Theme powerlevel10k_rainbow
 sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
 sudo chmod +x /usr/local/bin/oh-my-posh
 ```
-* Downlaod Posh-Themes:
+* Download Posh-Themes:
 ``` bash
 mkdir ~/.poshthemes
 wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
