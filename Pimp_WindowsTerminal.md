@@ -1,4 +1,4 @@
-# How to pimp your WSL2 Shell
+# How to pimp your Windows Terminal (Powershell + WSL2)
 
 This is mainly a summary of [scott hanselmans guide](https://www.hanselman.com/blog/how-to-make-a-pretty-prompt-in-windows-terminal-with-powerline-nerd-fonts-cascadia-code-wsl-and-ohmyposh) plus some googeling to make *Oh my posh* run on my machine.
 
