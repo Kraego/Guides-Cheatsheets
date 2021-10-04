@@ -2,7 +2,7 @@
 
 ## CLI Commands
 
-* Change Project: ```oc project [project name]``` (list projects with with ```òc project```)
+* Change Project: ```oc project [project name]``` (list projects with with ```oc project```)
 * Get Pods: ```oc get pods```
   * to just get names: ```oc get pods -o custom-columns=POD:.metadata.name --no-headers```
   * filter it with **grep**: ```oc get pods -o custom-columns=POD:.metadata.name --no-headers | grep [deployment name]```
