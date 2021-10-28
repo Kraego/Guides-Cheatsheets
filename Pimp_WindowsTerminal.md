@@ -39,6 +39,7 @@ rm ~/.poshthemes/themes.zip
 ```
 * Try it out with: ```eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"```
 * if it's working copy this to the end of your ```~/.bashrc``` file.
+  * in my case there was an issue with the initial prompt (it was kind of fragmented): ```eval clear``` at the end of my bashrc did the trick. 
 
 ## Download & Install Fonts on Windows
 
