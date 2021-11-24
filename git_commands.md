@@ -6,6 +6,7 @@
 
 ## Rebase
 
+* To start
 ```bash
 git fetch
 git rebase origin/main #rebase to remote
@@ -18,3 +19,6 @@ git pull
 git checkout [working branch]
 git rebase main
 ```
+* Then follow guiding
+  * try pull: 'git pull' ... automerge should work otherwise merge manualy
+  * push merge: 'git push'  
