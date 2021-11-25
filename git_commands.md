@@ -3,8 +3,10 @@
 ## How to store github PAT's
 
 1. Create them via: 'Settings/Developer Settings' on github
-2. activate credential helper (locally): `git config --global credential.helper manager-core`
-3. make push or clone: enter Username + Generated PAT in step 1
+2. activate credential helper (locally): 
+  * on windows: `git config --global credential.helper manager-core`
+  * on linux: `git config --global credential.helper store`
+4. make push or clone: enter Username + Generated PAT in step 1
 
 ## Show History 
 
