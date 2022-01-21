@@ -12,21 +12,34 @@
 
 ```git log --oneline --abbrev-commit --all --graph --decorate --color```
 
-## Rebase
+## Rebase (local)
 
-* To start
-```bash
-git fetch
-git rebase origin/main #rebase to remote
-```
-or 
+From [working branch] to main
+
 ```bash
 git fetch
 git checkout main
 git pull
 git checkout [working branch]
+git pull
 git rebase main
 ```
-* Then follow guiding
-  * try pull: 'git pull' ... automerge should work otherwise merge manualy
-  * push merge: 'git push'  
+* Then follow guiding from git
+  * resolve marked parts from rebase manualy in editor
+```
+<<<<<<< HEAD
+              CustomerPassword = GenerateCustomerPassword(command.CustomerPasswordLength),
+=======
+              CustomerPassword = HashCustomerPassword(GenerateCustomerPassword(command.CustomerPasswordLength)),
+>>>>>>> dev
+``` 
+to
+```            
+CustomerPassword = HashCustomerPassword(GenerateCustomerPassword(command.CustomerPasswordLength)),
+```
+* Check and add the changes:
+   *   `git add [file with changes]`
+   *   `git -m commit rebase merge`
+   *   `git push` (push the merge to working branch)
+
+Now Conflicts should be resolved!!
