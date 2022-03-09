@@ -9,6 +9,8 @@ Useful notes, hints, howto's for development.
 
 ## Common
 
+### Linux
+
 When creating a zip with windows, linux won't be able to `unzip` it, to fix that, run
 
 ```bash
