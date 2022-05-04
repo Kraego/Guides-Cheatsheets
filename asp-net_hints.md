@@ -98,8 +98,8 @@ dotnet ef
 * (set Environmet) - create Migrations
 ``` bash
 $env:ASPNETCORE_ENVIRONMENT="Local"
-dotnet ef migrations add Initial
+dotnet ef migrations add Initial -v
 
 #if running in nuget manager console
-add-migration Initial
+add-migration Initial -v
 ```
