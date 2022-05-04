@@ -95,8 +95,9 @@ dotnet tool update --global dotnet-ef
 # verify
 dotnet ef
 ```
-* create Migrations
+* (set Environmet) - create Migrations
 ``` bash
+$env:ASPNETCORE_ENVIRONMENT="Local"
 dotnet ef migrations add Initial
 
 #if running in nuget manager console
