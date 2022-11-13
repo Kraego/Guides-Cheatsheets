@@ -34,5 +34,7 @@ plugins=(
     zsh-z
     vscode
 )
-
 ```
+* git clone https://github.com/agkozak/zsh-z
+* git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+* git clone https://github.com/zsh-users/zsh-autosuggestions
