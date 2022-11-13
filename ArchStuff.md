@@ -11,3 +11,28 @@
   * install: `yay -S <aur package name>`
   * upgrade (guided): `yay -Sua`
   * remove: `yay -R <aur package name>`
+
+## ZSH
+
+### fzf - Terminal file search
+(Used via fzf)
+
+* `CTRL-T` - show folder and subfolder content
+* `CTRL-R` - show file/folder history
+* `CTRL-C` - show subfolders
+
+### other used plugins
+
+```
+plugins=(
+    fzf
+    git
+    history-substring-search
+    colored-man-pages
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-z
+    vscode
+)
+
+```
