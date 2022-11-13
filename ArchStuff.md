@@ -21,8 +21,8 @@
 * `CTRL-R` - show file/folder history
 * `CTRL-C` - show subfolders
 
-### other used plugins
-
+### other used plugins (Oh My Zsh)
+https://ohmyz.sh/
 ```
 plugins=(
     fzf
