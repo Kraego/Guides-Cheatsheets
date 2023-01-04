@@ -12,6 +12,18 @@
   * upgrade (guided): `yay -Sua`
   * remove: `yay -R <aur package name>`
 
+## General
+
+* **To background** in shell (f.e.: nano):
+  * `CTRL+Z` - to background
+  * `fg` - back to foreground
+* write iso to sd/usb
+  * `sudo dd bs=4M if=theIso.iso of=/dev/sda status=progress oflag=sync`
+    * if: source
+    * of: target
+* Find **biggest files**
+  * `sudo du -a /dir/ | sort -n -r | head -n 20
+    * 20 ... show just the 20 biggest files
 ## ZSH
 
 ### fzf - Terminal file search
