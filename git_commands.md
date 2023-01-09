@@ -8,6 +8,11 @@
   * on linux: `git config --global credential.helper store`
 4. make push or clone: enter Username + Generated PAT in step 1
 
+## Update credentials
+
+When using username/password instead of PAT's and credentials have changed
+  * `git config --global credential.helper manager-core --replace-all` (followed by pull or clone)
+
 ## Show History 
 
 ```git log --oneline --abbrev-commit --all --graph --decorate --color```
