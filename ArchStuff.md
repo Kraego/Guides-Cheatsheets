@@ -24,6 +24,13 @@
 * Find **biggest files**
   * `sudo du -a /dir/ | sort -n -r | head -n 20
     * 20 ... show just the 20 biggest files
+
+## Create Windows install medium
+
+* Since microsoft create special boot mediums - writing the iso won't work
+* Solution use `woeusb` (https://aur.archlinux.org/packages/woeusb)
+* `sudo woeusb --target-filesystem NTFS --device windows.iso /dev/sda`
+
 ## ZSH
 
 ### fzf - Terminal file search
