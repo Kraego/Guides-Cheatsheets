@@ -27,8 +27,9 @@ You can melt the commits to one single commit (interactive rebase)
 git rebase -i HEAD~[Number of Commits] #double check the count
 # Rebase file opens 
 # select `f` for all -> to squash
-# rename commit `r` 
+# rename commit with `r` 
 ```
+**!IF something failes exit with :q!** (don't save interactive rebase)
 
 ### Rebase
 
