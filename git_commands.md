@@ -19,6 +19,19 @@ When using username/password instead of PAT's and credentials have changed
 
 ## Rebase (local)
 
+### If you have many Commits to rebase 
+
+You can melt the commits to one single commit (interactive rebase)
+
+```bash
+git rebase -i HEAD~[Number of Commits] #double check the count
+# Rebase file opens 
+# select `f` for all -> to squash
+# rename commit `r` 
+```
+
+### Rebase
+
 From [working branch] to main
 
 ```bash
