@@ -21,7 +21,8 @@ When using username/password instead of PAT's and credentials have changed
 
 ### If you have many commits to rebase 
 
-You can melt the commits to one single commit (interactive rebase)
+You can melt the commits to one single commit (interactive rebase),
+select **f (for fixup)** for all commits except **p** for the first (oldest), or **r** if you want to rewrite the commit message.
 
 ```bash
 git rebase -i HEAD~[Number of Commits] #double check the count
