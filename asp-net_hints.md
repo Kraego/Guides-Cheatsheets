@@ -101,5 +101,10 @@ $env:ASPNETCORE_ENVIRONMENT="Local"
 dotnet ef migrations add Initial -v
 
 #if running in nuget manager console
-add-migration Initial -v
+Add-Migration Initial -v
+```
+* to **update a migration which was already applied** you need a rollback:
+```
+Update-Database <previous-migration-name> #before the migration you want to update
+Remove-Migration
 ```
