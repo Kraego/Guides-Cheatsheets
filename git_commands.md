@@ -69,4 +69,4 @@ Now Conflicts should be resolved!!
 
 Prune local branches that don't have a remote anymore on windows:
 
-`git checkout master; git remote update origin --prune; git branch -vv | Select-String -Pattern ": gone]" | % { $_.toString().Trim().Split(" ")[0]} | % {git branch -D $_}`
+`git checkout main; git remote update origin --prune; git branch -vv | Select-String -Pattern ": gone]" | % { $_.toString().Trim().Split(" ")[0]} | % {git branch -D $_}`
