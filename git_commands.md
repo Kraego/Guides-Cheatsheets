@@ -1,5 +1,103 @@
 # Git Commands CheatSheet
 
+**Contents:**
+- [Git Commands CheatSheet](#git-commands-cheatsheet)
+  - [Undo Stuff](#undo-stuff)
+  - [Better log alias](#better-log-alias)
+  - [Search in the log](#search-in-the-log)
+  - [Config diff to Delta](#config-diff-to-delta)
+  - [Rerere](#rerere)
+  - [Alias new and missing with dot Notation](#alias-new-and-missing-with-dot-notation)
+  - [Enable Autostash](#enable-autostash)
+  - [How to store github PAT's](#how-to-store-github-pats)
+  - [Update credentials](#update-credentials)
+  - [Show History](#show-history)
+  - [Rebase (local)](#rebase-local)
+    - [If you have many commits to rebase](#if-you-have-many-commits-to-rebase)
+    - [Rebase](#rebase)
+  - [Prune local branches (Windows)](#prune-local-branches-windows)
+
+## Undo Stuff
+
+**reflog** for Undoing stuff (rebase, merge, ...) stored in rr_cache, reflog keeptime is 90 days as default.
+
+```bash
+git reflog [branchname]
+```
+
+Example: Undo one wrong git action (`[branchname]@{[number of actions to undo]}`), `HEAD` can also be
+used in branchname
+
+```bash
+git reset --hard main@{1}
+```
+
+## Better log alias
+
+Create an alias `lg` for nicer logs
+
+```bash
+git log --pretty='%C(bold red)%h%Creset%C(bold yellow)%d%Creset %s %C(cyan)(%ar)%Creset'
+```
+
+**add as alias:**
+
+```bash
+git config --global alias.lg "log --pretty='%C(bold red)%h%Creset%C(bold yellow)%d%Creset %s %C(cyan)(%ar)%Creset'" 
+```
+
+## Search in the log
+
+S ... pickaxe
+
+```bash
+git log -S `[Searchstring]`
+```
+
+Search by Changed - Function/Method
+
+```bash
+git log -L:[Functionname]:[FileFilter]
+```
+
+f.e.:
+```bash
+git log -L:add:FooFunction
+```
+
+## Config diff to Delta
+
+nicer than `less` -> https://github.com/dandavison/delta (install with scoop: `scoop install delta`)
+
+```bash
+git config --global core.pager delta
+```
+
+## Rerere
+
+Reuse Recorder Resolution: for example when working on a long living feature branch to integrate changes from main iterative (in other words record the resolve of merge conflicts to apply them when creating the PR).
+
+```bash
+git config --global rerere.enabled true
+```
+
+## Alias new and missing with dot Notation
+
+Dotdot notation, stuff in main and not in foo: `git log main..foo` (for stuff in foo and not in main change places of branch)
+
+```bash
+git config --global alias new 'log --oneline main..HEAD'
+git config --global alias missing 'log --oneline HEAD..main'
+```
+
+## Enable Autostash
+
+Enable automatic stashing, so you don't have to commit before merging/rebase
+
+```bash
+git config --global rebase.autostash
+```
+
 ## How to store github PAT's
 
 1. Create them via: 'Settings/Developer Settings' on github
