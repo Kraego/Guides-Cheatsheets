@@ -19,7 +19,7 @@
 
 ## Undo Stuff
 
-**reflog** for Undoing stuff (rebase, merge, ...) stored in rr_cache, reflog keeptime is 90 days as default.
+**reflog** for Undoing stuff (rebase, merge, ...) stored in rr_cache, reflog keeptime is 90 days as default. The reflog stuff is stored in `.git\logs\refs`.
 
 ```bash
 git reflog [branchname]
