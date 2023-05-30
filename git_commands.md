@@ -11,7 +11,7 @@
   - [Enable Autostash](#enable-autostash)
   - [How to store github PAT's](#how-to-store-github-pats)
   - [Update credentials](#update-credentials)
-  - [Show History](#show-history)
+  - [Show History with branches](#show-history-with-branches)
   - [Rebase (local)](#rebase-local)
     - [If you have many commits to rebase](#if-you-have-many-commits-to-rebase)
     - [Rebase](#rebase)
@@ -86,8 +86,8 @@ git config --global rerere.enabled true
 Dotdot notation, stuff in main and not in foo: `git log main..foo` (for stuff in foo and not in main change places of branch)
 
 ```bash
-git config --global alias new 'log --oneline main..HEAD'
-git config --global alias missing 'log --oneline HEAD..main'
+git config --global alias.new 'log --oneline main..HEAD'
+git config --global alias.missing 'log --oneline HEAD..main'
 ```
 
 ## Enable Autostash
@@ -111,9 +111,17 @@ git config --global rebase.autostash
 When using username/password instead of PAT's and credentials have changed
   * `git config --global credential.helper manager-core --replace-all` (followed by pull or clone)
 
-## Show History 
+## Show History with branches
 
 ```git log --oneline --abbrev-commit --all --graph --decorate --color```
+
+save it as alias - `lgp`:
+
+from: https://stackoverflow.com/a/9074343/11473934 
+
+```bash
+git config --global alias.lgp "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
+```
 
 ## Rebase (local)
 
