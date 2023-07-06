@@ -1,4 +1,4 @@
-# Git Commands CheatSheet
+# Git CheatSheet
 
 **Contents:**
 - [Git Commands CheatSheet](#git-commands-cheatsheet)
