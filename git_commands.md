@@ -109,7 +109,7 @@ git config --global rebase.autostash
 ## Update credentials
 
 When using username/password instead of PAT's and credentials have changed
-  * `git config --global credential.helper manager-core --replace-all` (followed by pull or clone)
+  * `git config --global credential.helper manager --replace-all` (followed by pull or clone)
 
 ## Show History with branches
 
