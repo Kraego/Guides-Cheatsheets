@@ -16,6 +16,7 @@
     - [If you have many commits to rebase](#if-you-have-many-commits-to-rebase)
     - [Rebase](#rebase)
   - [Prune local branches (Windows)](#prune-local-branches-windows)
+  - [Blame specific lines in file](#blame-specific-lines-in-file) 
 
 ## Undo Stuff
 
