@@ -108,3 +108,7 @@ Add-Migration Initial -v
 Update-Database <previous-migration-name> #before the migration you want to update
 Remove-Migration
 ```
+* or even better Remove last migration with force
+```
+Remove-Migration -Force
+```
